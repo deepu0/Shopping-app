@@ -25,9 +25,7 @@ export default function App() {
             ...snapshot.data()
           });
         });
-        console.log(currentUser);
       }
-      setCurrentUser(userAuth);
     });
     return () => {
       unsubscribeFromAuth();
